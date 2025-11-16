@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaşar Kemal: Çukurova'nın Destan Yazarı</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font Family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Açık gri arka plan */
+        }
+        .text-brown-700 { color: #8B4513; } /* Özel kahverengi tonu */
+        .bg-clay { background-color: #B87333; } /* Kilden ilham alan arka plan */
+        .text-clay { color: #B87333; }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-brown-700 tracking-tight">
+                Yaşar Kemal
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#biyografi" class="text-gray-600 hover:text-clay transition duration-200 font-medium">Biyografi</a>
+                <a href="#eserler" class="text-gray-600 hover:text-clay transition duration-200 font-medium">Başlıca Eserler</a>
+                <a href="#temalar" class="text-gray-600 hover:text-clay transition duration-200 font-medium">Ana Temalar</a>
+                <a href="#galeri" class="text-gray-600 hover:text-clay transition duration-200 font-medium">Galeri</a>
+            </nav>
+            <button id="menuButton" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <a href="#biyografi" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">Biyografi</a>
+            <a href="#eserler" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">Başlıca Eserler</a>
+            <a href="#temalar" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">Ana Temalar</a>
+            <a href="#galeri" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">Galeri</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center h-[50vh] md:h-[70vh] flex items-center justify-center" 
+                 style="background-image: url('https://placehold.co/1920x800/228B22/FFFFFF?text=Çukurova+Manzarası');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="z-10 text-center max-w-4xl px-4">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-6 tracking-wide">
+                    Çukurova'nın Destan Yazarı
+                </h1>
+                <p class="text-xl sm:text-2xl italic text-gray-200">
+                    "O iyi insanlar, o güzel atlara bindiler çekip gittiler. Demirin tuncuna, insanın piçine kaldık."
+                </p>
+                <div class="mt-8">
+                    <a href="#eserler" class="inline-block px-8 py-3 bg-clay text-white font-semibold text-lg rounded-xl hover:bg-brown-700 transition duration-300 shadow-xl transform hover:scale-105">
+                        Eserlerini Keşfet
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biyografi Section -->
+        <section id="biyografi" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-brown-700 mb-12">Biyografi: Kemal Sadık Gökçeli'den Yaşar Kemal'e</h2>
+                
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/3 mb-8 md:mb-0 flex-shrink-0">
+                        <!-- Portre Fotoğrafı Placeholder -->
+                        <img src="https://placehold.co/400x550/454545/FFFFFF?text=Yaşar+Kemal+Portresi" alt="Yaşar Kemal Portresi" class="w-full h-auto object-cover rounded-3xl shadow-2xl transition duration-500 hover:shadow-3xl">
+                    </div>
+                    <div class="md:w-2/3 text-lg leading-relaxed space-y-6">
+                        <p>
+                            Asıl adı Kemal Sadık Gökçeli olan Yaşar Kemal, 1923 yılında Adana'nın Osmaniye ilçesine bağlı Hemite köyünde dünyaya geldi. Çocukluk yıllarında yaşadığı travmatik olaylar (babasının gözlerinin önünde öldürülmesi ve buna bağlı olarak gelişen kekemelik), onun hayatı ve sanatı üzerinde derin izler bıraktı.
+                        </p>
+                        <p>
+                            Edebiyatla çok erken yaşlarda tanıştı; halk hikayeleri ve destanlar, onun edebi dilinin temelini oluşturdu. Edebiyat yaşamına şiirle başlayan Yaşar Kemal, daha sonra gazetecilik ve röportajcılık yaparak Anadolu'nun gerçeklerini yakından gözlemleme fırsatı buldu. Bu deneyimler, eserlerinin temelini attı.
+                        </p>
+                        <p class="border-l-4 border-clay pl-4 italic">
+                            1955 yılında yayımlanan ilk romanı **İnce Memed**, ona uluslararası çapta ün kazandırdı. Bu eser, sadece bir isyan hikayesi değil, aynı zamanda Anadolu insanının ağalık düzenine karşı verdiği onurlu mücadelenin destanı oldu. Yaşar Kemal, eserlerinde doğanın, yoksulluğun, direnişin ve umudun izini sürdü, Türkçeye kendine özgü destansı bir lezzet kattı. Defalarca Nobel Edebiyat Ödülü'ne aday gösterildi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eserler Section -->
+        <section id="eserler" class="py-16 md:py-24 bg-clay text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">Başlıca Eserleri</h2>
+                <p class="text-center text-lg mb-12 max-w-3xl mx-auto">
+                    Yaşar Kemal, bereketli topraklardan çıkan bir yazar gibi, ardında onlarca unutulmaz roman, öykü ve deneme bıraktı. İşte onun edebi gücünü yansıtan bazı önemli eserleri.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Eser 1: İnce Memed -->
+                    <div class="bg-white text-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-clay mb-3">İnce Memed (Dörtleme)</h3>
+                            <p class="text-sm text-gray-500 mb-4">1955</p>
+                            <p class="mb-4">
+                                Torosların asi çocuğu Memed'in ağalık düzenine karşı başlattığı isyanın destanıdır. Dört kitaptan oluşan bu eser, Yaşar Kemal'in en bilinen ve en çok çevrilen başyapıtıdır.
+                            </p>
+                            <span class="inline-block bg-clay text-white text-xs px-3 py-1 rounded-full">Destan/İsyan</span>
+                        </div>
+                    </div>
+
+                    <!-- Eser 2: Yer Demir Gök Bakır -->
+                    <div class="bg-white text-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-clay mb-3">Yer Demir Gök Bakır</h3>
+                            <p class="text-sm text-gray-500 mb-4">1963</p>
+                            <p class="mb-4">
+                                Yoksulluk ve çaresizlik içinde yaşayan köylülerin, Hacı Ahmet'i bir kurtarıcı/evliya olarak görmeye başlamasını konu alır. Efsanenin gerçeklikle çarpıştığı güçlü bir romandır.
+                            </p>
+                            <span class="inline-block bg-clay text-white text-xs px-3 py-1 rounded-full">Efsane/Yoksulluk</span>
+                        </div>
+                    </div>
+
+                    <!-- Eser 3: Yılanı Öldürseler -->
+                    <div class="bg-white text-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-clay mb-3">Yılanı Öldürseler</h3>
+                            <p class="text-sm text-gray-500 mb-4">1976</p>
+                            <p class="mb-4">
+                                Annesini öldürmesi beklenen küçük bir çocuğun trajedisini anlatır. Töre ve namus kavramlarının birey üzerindeki acımasız baskısını sorgulayan, kısa ve etkili bir eserdir.
+                            </p>
+                            <span class="inline-block bg-clay text-white text-xs px-3 py-1 rounded-full">Töre/Trajedi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Temalar Section -->
+        <section id="temalar" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-brown-700 mb-12">Ana Temalar ve İmgeler</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Tema 1: Çukurova ve Doğa -->
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-lg border-t-4 border-green-600 transition duration-300 hover:shadow-xl">
+                        <div class="text-5xl mb-4 text-green-600">🌾</div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Çukurova ve Doğa</h3>
+                        <p class="text-gray-600">
+                            Yaşar Kemal için Çukurova sadece bir mekan değil, yaşayan, nefes alan bir karakterdir. Toprak, su ve pamuk tarlaları; aşkın, emeğin ve direnişin kaynağıdır.
+                        </p>
+                    </div>
+
+                    <!-- Tema 2: Halk Efsaneleri ve Destan Geleneği -->
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-lg border-t-4 border-yellow-600 transition duration-300 hover:shadow-xl">
+                        <div class="text-5xl mb-4 text-yellow-600">📜</div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Halk Efsaneleri</h3>
+                        <p class="text-gray-600">
+                            Eserlerinde modern roman tekniğini, Anadolu'nun sözlü destan geleneği ve efsanevi anlatım biçimiyle harmanlamıştır. Gerçek ile mit arasındaki ince çizgide yürür.
+                        </p>
+                    </div>
+
+                    <!-- Tema 3: Ağalık ve Adalet Arayışı -->
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-lg border-t-4 border-red-600 transition duration-300 hover:shadow-xl">
+                        <div class="text-5xl mb-4 text-red-600">⚖️</div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Adalet ve Direniş</h3>
+                        <p class="text-gray-600">
+                            Zalim ağalığa, yoksulluğa ve toplumsal eşitsizliğe karşı çıkan kahramanlar yaratmıştır. Onun karakterleri, onurlu bir yaşam için mücadele eden 'iyi insanlar'dır.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Section -->
+        <section id="galeri" class="py-16 md:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-brown-700 mb-12">Fotoğraf Karelerinde Yaşar Kemal</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://placehold.co/600x400/8B4513/FFFFFF?text=Gençlik+Yılları" alt="Yaşar Kemal Gençlik Yılları" class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/B87333/FFFFFF?text=Yazı+Masasında" alt="Yazı Masasında Çalışırken" class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/228B22/FFFFFF?text=Çukurova'da" alt="Çukurova'da Tarlalarda" class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/4B0082/FFFFFF?text=Ödül+Töreni" alt="Bir Ödül Töreninden Kare" class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="#" class="text-clay hover:text-brown-700 font-semibold inline-flex items-center">
+                        Tüm Galeriyi Gör
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm mb-2">&copy; 2024 Yaşar Kemal Anısına Hazırlanmıştır. Tüm hakları saklıdır.</p>
+            <div class="flex justify-center space-x-4 text-xs">
+                <a href="#" class="hover:text-clay transition duration-200">Kaynaklar</a>
+                <a href="#" class="hover:text-clay transition duration-200">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking
+                if (!document.getElementById('mobileMenu').classList.contains('hidden')) {
+                     document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
